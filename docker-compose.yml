@@ -3,7 +3,7 @@ version: '3'
 services:
 
   postgres:
-      container_name: 'postgres'
+      container_name: 'postgres_standalone'
       image: metodosagilesutn2020/database
       restart: always
       volumes:

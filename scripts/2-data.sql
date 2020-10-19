@@ -1,7 +1,5 @@
+-- user: 'user', password: 'password', tipoUsuario: superusuario
 
-INSERT INTO public.LICENCIAS values(1, 'A');
-INSERT INTO public.LICENCIAS values(2, 'B');
-INSERT INTO public.LICENCIAS values(3, 'C');
-INSERT INTO public.LICENCIAS values(4, 'D');
-INSERT INTO public.LICENCIAS values(5, 'E');
-INSERT INTO public.LICENCIAS values(6, 'F');
+INSERT INTO public.application_user(
+	id, apellido, dni, mail, nombre, password, tipo_usuario, username)
+	VALUES (1, 'Usuario', '12345678', 'user@domain.com', 'Super', '$2a$10$Bu31TZkrrToo6YXWAOBhV.HW0mQ3maMPW76ic3HbnWokqFIp5VxKC', 1, 'user');
