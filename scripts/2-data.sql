@@ -43,3 +43,31 @@ INSERT INTO public.tipo_licencia_licencias_necesarias(
 INSERT INTO public.tipo_licencia_licencias_necesarias(
 	tipo_licencia_id, licencias_necesarias_id)
 	VALUES (4, 1);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (0, 8, 20, 25, 30, 40);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (1, 8, 20, 25, 30, 40);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (2, 8, 23, 30, 35, 47);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (3, 8, 29, 39, 44, 59);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (4, 8, 29, 39, 44, 59);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (5, 8, 29, 39, 44, 59);
+
+INSERT INTO public.costo_licencia(
+	tipo, costo_administrativo, year1, year3, year4, year5)
+	VALUES (6, 8, 20, 25, 30, 40);
