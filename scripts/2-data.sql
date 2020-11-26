@@ -71,3 +71,23 @@ INSERT INTO public.costo_licencia(
 INSERT INTO public.costo_licencia(
 	tipo, costo_administrativo, year1, year3, year4, year5)
 	VALUES (6, 8, 20, 25, 30, 40);
+
+INSERT INTO public.vigencia(
+	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
+	VALUES (18, 20, 3, 1);
+
+INSERT INTO public.vigencia(
+	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
+	VALUES (21, 46, 5, 5);
+
+INSERT INTO public.vigencia(
+	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
+	VALUES (47, 60, 4, 4);
+
+INSERT INTO public.vigencia(
+	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
+	VALUES (61, 70, 3, 3);
+
+INSERT INTO public.vigencia(
+	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
+	VALUES (71, 99, 1, 1);

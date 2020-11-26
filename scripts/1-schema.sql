@@ -198,4 +198,20 @@ TABLESPACE pg_default;
 ALTER TABLE public.costo_licencia
     OWNER to postgres;
 
+-- Table: public.vigencia
 
+-- DROP TABLE public.vigencia;
+
+CREATE TABLE public.vigencia
+(
+    rango_inferior_edad integer NOT NULL,
+    rango_superior_edad integer NOT NULL,
+    tiempo_vigencia integer,
+    tiempo_vigencia_primera_vez integer,
+    CONSTRAINT vigencia_pkey PRIMARY KEY (rango_inferior_edad, rango_superior_edad)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.vigencia
+    OWNER to postgres;
