@@ -142,7 +142,7 @@ CREATE TABLE public.titular_licencia
     donante boolean,
     factor_rh integer,
     fecha_nacimiento date,
-    foto character varying(255) COLLATE pg_catalog."default",
+    foto text COLLATE pg_catalog."default",
     grupo_sanguineo integer,
     nombre character varying(255) COLLATE pg_catalog."default",
     nro_documento character varying(255) COLLATE pg_catalog."default",
