@@ -224,3 +224,15 @@ TABLESPACE pg_default;
 
 ALTER TABLE public.licencia
     OWNER to postgres;
+
+-- PROCEDURE: public.finalizar_vigencia()
+
+-- DROP PROCEDURE public.finalizar_vigencia();
+
+CREATE OR REPLACE PROCEDURE public.finalizar_vigencia(
+	)
+LANGUAGE 'sql'
+AS $BODY$
+UPDATE public.licencia SET estado = 1
+WHERE fecha_fin_vigencia < (SELECT CURRENT_DATE);
+$BODY$;
