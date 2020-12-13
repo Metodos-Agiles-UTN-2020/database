@@ -164,6 +164,7 @@ CREATE TABLE public.costo_licencia
 (
     tipo integer NOT NULL,
     costo_administrativo integer,
+    costo_copia integer,
     year1 integer,
     year3 integer,
     year4 integer,

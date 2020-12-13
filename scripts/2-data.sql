@@ -45,32 +45,32 @@ INSERT INTO public.tipo_licencia_licencias_necesarias(
 	VALUES (4, 1);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (0, 8, 20, 25, 30, 40);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (0, 8, 20, 25, 30, 40, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (1, 8, 20, 25, 30, 40);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (1, 8, 20, 25, 30, 40, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (2, 8, 23, 30, 35, 47);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (2, 8, 23, 30, 35, 47, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (3, 8, 29, 39, 44, 59);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (3, 8, 29, 39, 44, 59, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (4, 8, 29, 39, 44, 59);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (4, 8, 29, 39, 44, 59, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (5, 8, 29, 39, 44, 59);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (5, 8, 29, 39, 44, 59, 50);
 
 INSERT INTO public.costo_licencia(
-	tipo, costo_administrativo, year1, year3, year4, year5)
-	VALUES (6, 8, 20, 25, 30, 40);
+	tipo, costo_administrativo, year1, year3, year4, year5, costo_copia)
+	VALUES (6, 8, 20, 25, 30, 40, 50);
 
 INSERT INTO public.vigencia(
 	rango_inferior_edad, rango_superior_edad, tiempo_vigencia, tiempo_vigencia_primera_vez)
