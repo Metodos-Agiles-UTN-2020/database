@@ -12,7 +12,9 @@ CREATE TABLE public.application_user
     password character varying(255) COLLATE pg_catalog."default",
     tipo_usuario integer,
     username character varying(255) COLLATE pg_catalog."default",
-    CONSTRAINT application_user_pkey PRIMARY KEY (id)
+    CONSTRAINT application_user_pkey PRIMARY KEY (id),
+    CONSTRAINT unique_username UNIQUE (username),
+    CONSTRAINT unique_dni UNIQUE (dni)
 )
 
 TABLESPACE pg_default;
@@ -237,3 +239,18 @@ AS $BODY$
 UPDATE public.licencia SET estado = 1
 WHERE fecha_fin_vigencia < (SELECT CURRENT_DATE);
 $BODY$;
+
+
+-- SEQUENCE: public.seq
+
+-- DROP SEQUENCE public.seq;
+
+CREATE SEQUENCE public.seq
+    INCREMENT 1
+    START 2
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.seq
+    OWNER TO postgres;
